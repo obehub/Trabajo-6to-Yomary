@@ -6,7 +6,7 @@
 
 body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-     rgba(255, 255, 255, 0)), url(/HTML/IMAGENES/Travel.png);
+     rgba(255, 255, 255, 0)), url(/IMAGENES/Travel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
