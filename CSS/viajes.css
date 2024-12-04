@@ -5,12 +5,8 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-     rgba(255, 255, 255, 0)), url(/IMAGENES/carretera.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #f0f4f8;
+    color: #333;
 }
 
 /*Inicio de la barra de tareas*/
@@ -69,59 +65,93 @@ body {
       margin: 10px 10px;
     }
 }
+
 /*Fin de la barra de tareas*/
 
-/*Inicio del contenido*/
-.titulo {
-    background-color: #5a5a5a;
+.busqueda {
+    background: linear-gradient(to right, #007bff, #00bcd4);
     color: white;
-    padding: 20px 0;
+    padding: 30px 20px;
     text-align: center;
-    margin: 20px 50px;
+    margin: 10px;
 }
 
-.titulo h1 {
+h1 {
+    font-size: 2.5em;
     margin: 0;
 }
 
-#carta {
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+    box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
+}
+
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
     padding: 20px;
 }
 
-.driver-card {
+/*Tarjetas*/
+.tour-card {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    max-width: 300px;
-    text-align: center;
+    border-radius: 20px;
     overflow: hidden;
+    width: 320px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.driver-card img {
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.tour-card img {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+    height: 220px;
+    object-fit: cover;
 }
 
-.driver-info {
-    padding: 15px;
+.tour-card h2 {
+    margin: 20px;
+    font-size: 1.8em;
+    color: #007bff;
 }
 
-.driver-info h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.driver-info p {
-    margin: 5px 0;
+.tour-card p {
+    margin: 0 20px 20px;
+    font-size: 1em;
     color: #555;
 }
-/*Fin del contenido*/
+
+.tour-card p:last-child {
+    margin-bottom: 30px;
+}
 
 
 /*Pie de pagina*/
@@ -202,4 +232,16 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .tour-card {
+        width: 90%;
+    }
+
+    .search-filter input,
+    .search-filter select {
+        width: 80%;
+    }
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tours</title>
+    <link rel="stylesheet" href="/CSS/viajes.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="contenedor">
+            <div class="barra">
+
+               <a href="index.html"> <img src="/IMAGENES/ObejaTour_logo.png" alt="No carga la imagen"> </a>
+
+                <ul>
+                    <li> <a href="/HTML/index.html">Inicio</a> </li>
+                    <li> <a href="">Viajes</a> </li>
+                    <li> <a href="/HTML/conductores.html">Conductores</a> </li>
+                    <li> <a href="/HTML/nosotros.html">Sobre nosotros</a> </li>
+                    <li> <a href="/HTML/contacto.html">Contacto</a> </li>
+
+                </ul>
+
+            </div>
+            </div>
+
+        </nav>
+        
+        <div class="busqueda">
+
+        <h1>Explora Nuestros Tours</h1>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Buscar destinos..." oninput="filterTours()">
+            <select id="durationFilter" onchange="filterTours()">
+                <option value="">Duración</option>
+                <option value="1-3 días">1-3 días</option>
+                <option value="4-7 días">4-7 días</option>
+                <option value="8+ días">8+ días</option>
+            </select>
+            <select id="priceFilter" onchange="filterTours()">
+                <option value="">Rango de Precio</option>
+                <option value="económico">Económico</option>
+                <option value="moderado">Moderado</option>
+                <option value="lujo">Lujo</option>
+            </select>
+        </div>
+    </div>
+    </header>
+
+    <main id="tour-list">
+        <div class="tour-card" data-duration="1-3 días" data-price="económico">
+            <img src="/IMAGENES/samana.png" alt="Destino 1">
+            <h2>Tour a Machu Picchu</h2>
+            <p>Duración: 3 días</p>
+            <p>Estadía: Hotel 4 estrellas</p>
+            <p>Precio: $500</p>
+            <p>Descripción: Descubre la majestuosidad de la ciudadela inca.</p>
+        </div>
+        
+        <div class="tour-card" data-duration="4-7 días" data-price="moderado">
+            <img src="/IMAGENES/isla saona.png" alt="Destino 2">
+            <h2>Safari en África</h2>
+            <p>Duración: 6 días</p>
+            <p>Estadía: Campamento de lujo</p>
+            <p>Precio: $2500</p>
+            <p>Descripción: Vive la experiencia única de un safari.</p>
+        </div>
+        
+
+    </main>
+
+
+    <div class="pie-pagina">
+    <footer class="footer">
+        <ul class="icono">
+            <li class="instagram">
+                <a href="" class="enlace-icono">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+
+            <li class="whatsapp">
+                <a href="" class="enlace-icono">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+
+            <li class="email">
+                <a href="" class="enlace-icono">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+
+
+            <ul class="menu">
+
+                <li class="menu-elem">
+                  <a href="/HTML/index.html" class="menu-letra"> Inicio </a>
+                </li>
+
+                <li class="menu-elem">
+                  <a href="/HTML/contacto.html" class="menu-letra"> Contacto </a>
+                </li>
+
+                <li class="menu-elem">
+                  <a href="/HTML/nosotros.html" class="menu-letra"> Sobre nosotros </a>
+                </li>
+
+        </ul>
+    
+        <p id="derechos">&copy; 2024 ObejaTour | Todos los derechos reservados</p>
+
+    </footer>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
