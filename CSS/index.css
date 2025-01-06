@@ -5,8 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-     rgba(255, 255, 255, 0)), url(/IMAGENES/Travel.png);
+    background-image: url(/IMAGENES/Travel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -40,14 +39,17 @@ body {
 
 .barra a {
     text-decoration: none;
-    color: #5a5a5a;
+    color: #000000;
     margin: 0 15px;
     font-weight: bold;
     font-size: 20px;
 }
 
 .barra a:hover {
-    color: black;
+    color: #000000;
+    padding: 5px;
+    background-color: #D5E7F2;
+    border-radius: 10px;
 }
 
 .barra img {
@@ -74,7 +76,7 @@ body {
 /*Inicio del contenido*/
 
 .bienvenida {
-    background-color:  rgba(255, 255, 255, 0.5);
+    background-color: #8bc5e9;
     color: black;
     text-align: center;
     padding: 50px 20px;
@@ -91,14 +93,14 @@ body {
 }
 
 .destinos-populares {
-    padding:100px 20px;
-    background-color: #fff;
+    padding: 80px 20px;
+    background-color: #ffffff;
     text-align: center;
 }
 
 .destinos-populares h2 {
     font-size: 36px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     
 }
 
@@ -110,10 +112,10 @@ body {
 }
 
 .destino {
-    background-color: lightgrey;
+    background-color: #8bc5e9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #2c400160;
     text-align: center;
     width: 300px;
     transition: transform 0.3s;
@@ -137,7 +139,7 @@ body {
 
 .destino p {
     font-size: 16px;
-    color: #555;
+    color: #000000;
 }
 
 
@@ -154,7 +156,7 @@ body {
 .footer {
     position: relative;
     width: 100%;
-    background: white;
+    background: #ffffff;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;

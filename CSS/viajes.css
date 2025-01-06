@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f0f4f8;
+    background-color: rgba(211, 211, 211, 0.452);
     color: #333;
 }
 
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -43,7 +43,10 @@ body {
 }
 
 .barra a:hover {
-    color: black;
+    color: #000000;
+    padding: 5px;
+    background-color: #D5E7F2;
+    border-radius: 10px;
 }
 
 .barra img {
@@ -69,7 +72,7 @@ body {
 /*Fin de la barra de tareas*/
 
 .busqueda {
-    background: linear-gradient(to right, #007bff, #00bcd4);
+    background: linear-gradient(to right, #e2f4ff, hsl(203, 100%, 63%)  );
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -81,7 +84,7 @@ h1 {
     margin: 0;
 }
 
-.search-filter {
+.filtro {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -89,8 +92,8 @@ h1 {
     flex-wrap: wrap;
 }
 
-.search-filter input,
-.search-filter select {
+.filtro input,
+.filtro select {
     padding: 12px 20px;
     border: none;
     border-radius: 25px;
@@ -102,8 +105,8 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.search-filter input:focus,
-.search-filter select:focus {
+.filtro input:focus,
+.filtro select:focus {
     box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
 }
 
@@ -117,39 +120,39 @@ main {
 }
 
 /*Tarjetas*/
-.tour-card {
-    background-color: white;
+.cartas_tour {
+    background-color: rgba(135, 206, 250, 0.712);
     border-radius: 20px;
     overflow: hidden;
-    width: 320px;
+    width: 400px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tour-card:hover {
+.cartas_tour:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-.tour-card img {
+.cartas_tour img {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.tour-card h2 {
+.cartas_tour h2 {
     margin: 20px;
     font-size: 1.8em;
-    color: #007bff;
+    color: black;
 }
 
-.tour-card p {
+.cartas_tour p {
     margin: 0 20px 20px;
     font-size: 1em;
     color: #555;
 }
 
-.tour-card p:last-child {
+.cartas_tour p:last-child {
     margin-bottom: 30px;
 }
 
@@ -159,7 +162,7 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 50vh;
+    min-height: 30vh;
   }
 
 .footer {
