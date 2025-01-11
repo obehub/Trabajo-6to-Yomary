@@ -1,11 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgba(211, 211, 211, 0.452);
+    font-family: 'Arial', sans-serif;
+    background-image: url(/IMAGENES/Travel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #333;
 }
 
@@ -21,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -36,73 +41,65 @@ body {
 
 .barra a {
     text-decoration: none;
-    color: #5a5a5a;
+    color: #0077b6;
     margin: 0 15px;
     font-weight: bold;
     font-size: 20px;
+    transition: color 0.3s;
 }
 
-.barra a:hover {
-    color: #000000;
+.barra li a:hover {
+    color: #023e8a;
     padding: 5px;
-    background-color: #D5E7F2;
+    background-color: #caf0f8;
     border-radius: 10px;
 }
 
 .barra img {
     height: 100px;
     border-radius: 50px;
-    transition: transform 0.3s ease;
-}
-
-.barra img:hover {
-    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
     .barra {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
     .barra a {
-      margin: 10px 10px;
+        margin: 10px 10px;
     }
 }
-
 /*Fin de la barra de tareas*/
 
+/* Sección de búsqueda */
 .busqueda {
-    background: linear-gradient(to right, #e2f4ff, hsl(203, 100%, 63%)  );
+    background: linear-gradient(to right, #56cfe1, #64b5f6);
     color: white;
     padding: 30px 20px;
     text-align: center;
-    margin: 10px;
 }
 
-h1 {
+.busqueda h1 {
     font-size: 2.5em;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .filtro {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 20px 0;
     flex-wrap: wrap;
 }
 
 .filtro input,
 .filtro select {
-    padding: 12px 20px;
+    padding: 12px;
     border: none;
     border-radius: 25px;
-    outline: none;
-    width: 250px;
+    width: 200px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s;
 }
 
 .filtro input:focus,
@@ -110,73 +107,99 @@ h1 {
     box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
 }
 
-
+/* Contenedor de tours */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 20px;
+    padding: 80px 20px;
+    background-color: #f8f9fa;
 }
 
-/*Tarjetas*/
 .cartas_tour {
-    background-color: rgba(135, 206, 250, 0.712);
-    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
     overflow: hidden;
-    width: 400px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    height: 45vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cartas_tour:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cartas_tour img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
 }
 
 .cartas_tour h2 {
-    margin: 20px;
-    font-size: 1.8em;
-    color: black;
+    font-size: 1.5em;
+    margin: 15px 20px;
+    color: #007BFF;
 }
 
 .cartas_tour p {
-    margin: 0 20px 20px;
-    font-size: 1em;
+    margin: 0 20px 15px;
     color: #555;
+    font-size: 1rem;
 }
 
-.cartas_tour p:last-child {
-    margin-bottom: 30px;
-}
-
-
-/*Pie de pagina*/
-.pie-pagina {
+.cartas_tour .conductor {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    min-height: 30vh;
-  }
+    align-items: center;
+    gap: 10px;
+    margin: 15px 20px;
+}
+
+.cartas_tour .conductor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cartas_tour .conductor a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+
+
+#duracion {
+    font-size: 20px;
+    display: inline;
+    margin-left: 30px;
+}
+
+#precio {
+    font-size: 20px;
+    color: green;
+    display: inline;
+    margin-left: 120px;
+}
+
+/* Pie de página */
 
 .footer {
     position: relative;
     width: 100%;
-    background: white;
+    background: #0077b6;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
+    color: white;
+}
+
 .icono {
     display: flex;
     justify-content: center;
@@ -185,23 +208,23 @@ main {
     margin: 0 5px ; 
     flex-wrap: wrap;
 }
-  
+
 .instagram, .whatsapp, .email {
     list-style: none;
 }
-  
+
 .enlace-icono {
-    color: black;
+    color: white;
     font-size: 30px;
     display: inline-block;
     margin: 0 10px;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
-  
+
 .enlace-icono:hover {
     transform: translateY(-10px);
 }
-  
+
 .menu {
     display: flex;
     justify-content: center;
@@ -209,42 +232,43 @@ main {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
- }
-  
+}
+
 .menu-elem {
     list-style: none;
 }
 
 .menu-letra {
-    color: black;
+    color: white;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
     margin: 5px 10px;
-    opacity: 0.5;
-    transition: 0.3s;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 }
-  
+
 .menu-letra:hover {
     opacity: 1;
 }
-  
+
 #derechos {
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 
 @media (max-width: 768px) {
-    .tour-card {
+    .cartas_tour {
         width: 90%;
     }
 
-    .search-filter input,
-    .search-filter select {
-        width: 80%;
+    .filtro input,
+    .filtro select {
+        width: 90%;
     }
 }
