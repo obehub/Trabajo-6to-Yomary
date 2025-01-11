@@ -170,12 +170,10 @@ main {
     font-size: 1.1rem;
 }
 
-
-
 #duracion {
     font-size: 20px;
     display: inline;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 #precio {
@@ -184,6 +182,9 @@ main {
     display: inline;
     margin-left: 120px;
 }
+
+
+
 
 /* Pie de página */
 
