@@ -101,6 +101,10 @@ body {
     max-width: 600px;
 }
 
+img {
+    width: 100%;
+}
+
 article {
     flex: 1;
     min-width: 320px;

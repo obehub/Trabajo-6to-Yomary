@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-     rgba(255, 255, 255, 0)), url(/IMAGENES/contacto.png);
+    background-image: url(/IMAGENES/Travel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 /*Inicio de la barra de tareas*/
@@ -25,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -40,16 +41,17 @@ body {
 
 .barra a {
     text-decoration: none;
-    color: #5a5a5a;
+    color: #0077b6;
     margin: 0 15px;
     font-weight: bold;
     font-size: 20px;
+    transition: color 0.3s;
 }
 
 .barra li a:hover {
-    color: #000000;
+    color: #023e8a;
     padding: 5px;
-    background-color: #D5E7F2;
+    background-color: #caf0f8;
     border-radius: 10px;
 }
 
@@ -58,23 +60,22 @@ body {
     border-radius: 50px;
 }
 
-
 @media (max-width: 768px) {
     .barra {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
     .barra a {
-      margin: 10px 10px;
+        margin: 10px 10px;
     }
 }
 /*Fin de la barra de tareas*/
 
 
 /*Inicia Contacto*/
+
 .contacto {
-    margin: 20px;
-    padding: 40px 20px;
+    padding: 80px 20px;
     text-align: center;
     background-color: white;
 }
@@ -171,28 +172,24 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
 /*Termina contacto*/
 
 /*Pie de pagina*/
-.pie-pagina {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    min-height: 20vh;
-}
 
 .footer {
     position: relative;
     width: 100%;
-    background: white;
+    background: #0077b6;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
-  
+
 .icono {
     display: flex;
     justify-content: center;
@@ -201,23 +198,23 @@ button:hover {
     margin: 0 5px ; 
     flex-wrap: wrap;
 }
-  
+
 .instagram, .whatsapp, .email {
     list-style: none;
 }
-  
+
 .enlace-icono {
-    color: black;
+    color: white;
     font-size: 30px;
     display: inline-block;
     margin: 0 10px;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
-  
+
 .enlace-icono:hover {
     transform: translateY(-10px);
 }
-  
+
 .menu {
     display: flex;
     justify-content: center;
@@ -226,29 +223,30 @@ button:hover {
     margin: 10px 0;
     flex-wrap: wrap;
 }
-  
+
 .menu-elem {
     list-style: none;
 }
 
 .menu-letra {
-    color: black;
+    color: white;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
     margin: 5px 10px;
-    opacity: 0.5;
-    transition: 0.3s;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 }
-  
+
 .menu-letra:hover {
     opacity: 1;
 }
-  
+
 #derechos {
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    opacity: 0.8;
 }
