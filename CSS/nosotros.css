@@ -74,14 +74,11 @@ body {
 /*Fin de la barra de tareas*/
 
 
-#sobre-nosotros {
-    max-width: 2200px;
+main {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#sobre-nosotros h1 {
+main h1 {
     background: linear-gradient(to right, #56cfe1, #64b5f6);
     color: white;
     padding: 30px 20px;
@@ -96,21 +93,17 @@ body {
     padding: 10rem;
 }
 
-.historia {
-    margin: 100px auto;
-    max-width: 600px;
-}
-
-img {
-    width: 100%;
+.contenido img {
+    width: 650px;
 }
 
 article {
     flex: 1;
-    min-width: 320px;
     text-align: center;
     border-radius: 10px;
-    background-color: lightcyan;
+    min-width: 600px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 article h2 {
@@ -123,6 +116,9 @@ article p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #555;
+    width: 600px;
+    margin: 30px auto;
+
 }
 
 /*pie de pagina*/
