@@ -19,8 +19,9 @@ header img {
     border-radius: 50px;
 }
 
-header .contact-info {
-    text-align: right;
+header .encabezado {
+    margin-right: 76%;
+    font-size: 25px;
 }
 
 header .contact-info p {
