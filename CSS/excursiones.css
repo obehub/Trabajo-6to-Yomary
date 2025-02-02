@@ -9,7 +9,6 @@ header {
     background-color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
@@ -20,13 +19,13 @@ header img {
 }
 
 header .encabezado {
-    margin-right: 76%;
-    font-size: 25px;
+    margin: 0 20px;
 }
 
-header .contact-info p {
-    margin: 0;
-    font-size: 14px;
+header p {
+    display: inline;
+    margin: 0 100px;
+    font-size: 20px;
 }
 
 .contenido {

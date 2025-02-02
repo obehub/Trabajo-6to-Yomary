@@ -12,6 +12,7 @@ while (b < 5) {
 let c = 0;
 do {
     //console.log(c);
+    //document.write(c)
     c++;
 } while (c < 5);
 
